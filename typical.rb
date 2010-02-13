@@ -1,9 +1,7 @@
 # This template pulls in all of the various partials
 
 # Before we commit anything to git, remove files we don't really need:
-run 'rm public/index.html'
-run 'rm public/favicon.ico'
-run 'rm public/images/rails.png'
+apply File.expand_path(File.join(File.dirname(__FILE__), '..', 'rails_templates', 'partials', 'remove_misc_files.rb'))
 
 # Create a fresh git repo
 git :init
