@@ -12,8 +12,8 @@ file 'app/views/layouts/application.html.haml', <<-CODE
     = javascript_include_tag 'jquery', 'jquery-ui', 'rails'
     = csrf_meta_tag
   %body
-    %p.notice
-      = notice
+    - if notice.present?
+      %p.notice= notice
 
     = yield
 CODE
