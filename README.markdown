@@ -16,6 +16,7 @@ Still TODO:
 * Pull in Formtastic
 * Pull in Cucumber
 * Pull in Hoptoad
+* Pull in FactoryGirl
 
 ## Pre-requisites
 At time of writing, Rails 3 is in beta so I've got all of the following installed as system gems (sudo)
