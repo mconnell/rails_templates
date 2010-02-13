@@ -1,6 +1,10 @@
 # I think the process of getting haml running is a bit broke as
 # we need the gem in the Gemfile and the plugin ATM
+append_file 'Gemfile', <<-GEMS
 gem 'haml'
+
+GEMS
+
 run "haml --rails ."
 
 # Generate an application layout similiar to one created by the scaffold generator
