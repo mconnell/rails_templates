@@ -19,6 +19,3 @@ git :commit => "-m 'Pull in JQuery UJS.'"
 apply File.expand_path(File.join(File.dirname(__FILE__), '..', 'rails_templates', 'partials', 'haml.rb'))
 git :add => "."
 git :commit => "-m 'Setup HAML.'"
-
-# And finally, run bundler:
-run 'bundle install'
