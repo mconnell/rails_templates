@@ -19,3 +19,8 @@ git :commit => "-m 'Pull in JQuery UJS.'"
 apply File.expand_path(File.join(File.dirname(__FILE__), '..', 'rails_templates', 'partials', 'haml.rb'))
 git :add => "."
 git :commit => "-m 'Setup HAML.'"
+
+# Set up rspec / rspec-rails
+apply File.expand_path(File.join(File.dirname(__FILE__), '..', 'rails_templates', 'partials', 'rspec.rb'))
+git :add => "."
+git :commit => "-m 'Setup RSpec.'"

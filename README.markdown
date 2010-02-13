@@ -7,12 +7,12 @@ Currently, the typical install does:
 * Sets up a new git repository
 * Pulls in JQuery instead of Prototype
 * Pulls in HAML and creates a very basic application.html.haml template
+* Sets up RSpec
 
 Still TODO:
 
 * Something sensible for CSS (960/blueprint)
 * Pull in HAML view generators
-* Uses Rspec instead of test unit
 * Pull in Formtastic
 * Pull in Cucumber
 * Pull in Hoptoad
@@ -24,6 +24,12 @@ At time of writing, Rails 3 is in beta so I've got all of the following installe
 
     sudo gem install tzinfo builder memcache-client rack rack-test rack-mount erubis mail text-format thor bundler i18n haml
     sudo gem rails --pre
+
+You'll also need RSpec/RSpec-rails 2 which can be installed via:
+
+    sudo gem install webrat
+    sudo gem install rspec --prerelease
+    sudo gem install rspec-rails --pre
 
 ## How to Use
 In your workspace, clone the repo:
