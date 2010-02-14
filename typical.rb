@@ -22,3 +22,8 @@ git :commit => "-m 'Setup HAML.'"
 apply File.expand_path(File.join(File.dirname(__FILE__), '..', 'rails_templates', 'components', 'rspec.rb'))
 git :add => "."
 git :commit => "-m 'Setup RSpec.'"
+
+# Setup Factory Girl
+apply File.expand_path(File.join(File.dirname(__FILE__), '..', 'rails_templates', 'components', 'factory_girl.rb'))
+git :add => "."
+git :commit => "-m 'Setup factory girl.'"

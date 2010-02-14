@@ -8,6 +8,7 @@ Currently, the typical install does:
 * Pulls in JQuery instead of Prototype
 * Pulls in HAML and creates a very basic application.html.haml template
 * Sets up RSpec
+* Adds Factory Girl, and adds a generator to auto-create spec/factories/model_name_factory.rb files
 
 Still TODO:
 
@@ -16,7 +17,6 @@ Still TODO:
 * Pull in Formtastic
 * Pull in Cucumber
 * Pull in Hoptoad
-* Pull in FactoryGirl
 * Capify in prep of deployment
 
 ## Pre-requisites
@@ -30,6 +30,14 @@ You'll also need RSpec/RSpec-rails 2 which can be installed via:
     sudo gem install webrat
     sudo gem install rspec --prerelease
     sudo gem install rspec-rails --pre
+
+And last but not least, to get factory_girl working you need to build the gem from the rails3 dev branch:
+
+    git clone git://github.com/thoughtbot/factory_girl.git
+    cd factory_girl
+    git checkout rails3
+    gem build factory_girl.gemspec
+    sudo gem install factory_girl-1.2.3.gem
 
 ## How to Use
 In your workspace, clone the repo:
