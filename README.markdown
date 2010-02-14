@@ -4,20 +4,22 @@ This is my store of Rails 3 templates. Feel free to fork, fix and adapt to suit 
 
 Currently, the typical install does:
 
+* Creates a new Rails application
+* Removes the default index.html, favicon, rails.png
 * Sets up a new git repository
-* Pulls in JQuery instead of Prototype
-* Pulls in HAML and creates a very basic application.html.haml template
-* Sets up RSpec
-* Adds Factory Girl, and adds a generator to auto-create spec/factories/model_name_factory.rb files
+* Pulls in JQuery UJS instead of Prototype UJS
+* Pulls in HAML and basic layouts/application.html.haml
+* Sets up RSpec2
+* Adds Factory Girl and factory generator
 
 Still TODO:
 
-* Something sensible for CSS (960/blueprint)
-* Pull in HAML view generators
-* Pull in Formtastic
-* Pull in Cucumber
-* Pull in Hoptoad
-* Capify in prep of deployment
+* Add Compass and some sensible defaults for CSS
+* HAML view generators
+* Add Formtastic
+* Add Cucumber
+* Add Hoptoad
+* Run Capify .
 
 ## Pre-requisites
 At time of writing, Rails 3 is in beta so I've got all of the following installed as system gems (sudo)
