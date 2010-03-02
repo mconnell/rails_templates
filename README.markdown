@@ -10,6 +10,7 @@ Currently, the typical install does:
 * Pulls in JQuery UJS instead of Prototype UJS
 * Pulls in HAML and basic layouts/application.html.haml
 * Sets up RSpec2
+* Sets up Cucumber
 * Adds Factory Girl and factory generator
 
 Still TODO:
@@ -17,7 +18,6 @@ Still TODO:
 * Add Compass and some sensible defaults for CSS
 * HAML view generators
 * Add Formtastic
-* Add Cucumber
 * Add Hoptoad
 * Run Capify .
 
@@ -32,6 +32,9 @@ You'll also need RSpec/RSpec-rails 2 which can be installed via:
     sudo gem install webrat
     sudo gem install rspec --prerelease
     sudo gem install rspec-rails --pre
+
+For Cucumber:
+    sudo gem install capybara database_cleaner cucumber-rails
 
 And last but not least, to get factory_girl working you need to build the gem from the rails3 dev branch:
 
