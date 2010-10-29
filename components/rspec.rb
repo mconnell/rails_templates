@@ -3,9 +3,8 @@ require 'rspec/rails/version'
 
 append_file 'Gemfile', <<-GEMS
 group :test do
-  gem 'webrat'
-  gem 'rspec',       '#{Rspec::Version::STRING}'
-  gem 'rspec-rails', '#{Rspec::Rails::Version::STRING}'
+  gem 'rspec'
+  gem 'rspec-rails'
 end
 
 GEMS

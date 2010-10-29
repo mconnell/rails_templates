@@ -5,7 +5,7 @@ gem 'haml'
 
 GEMS
 
-run "haml --rails ."
+run 'rm app/views/layouts/application.html.erb'
 
 # Generate an application layout similiar to one created by the scaffold generator
 file 'app/views/layouts/application.html.haml', <<-CODE
@@ -13,7 +13,7 @@ file 'app/views/layouts/application.html.haml', <<-CODE
 %html
   %head
     %title= controller.action_name
-    = javascript_include_tag 'jquery', 'jquery-ui', 'rails'
+    = javascript_include_tag 'jquery', 'jquery-ui', 'rails', 'application'
     = csrf_meta_tag
   %body
     - if notice.present?
